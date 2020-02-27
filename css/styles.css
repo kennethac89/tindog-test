@@ -1,0 +1,180 @@
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+/* navigation bar */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+/* download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  /*esto es para que la imagen del perro salga del flujo normal de html y no agrande el DIV*/
+  right: 25%;
+}
+
+/* features */
+#features {
+  padding: 7% 15%;
+  /*7 top/bottom, 15 left/right */
+  background-color: #fff;
+  position: relative;
+  /*esto es para amntener esta sección en el flujo de html pero que aparezca encima de la imagen del perro*/
+  z-index: 1;
+  /*el z-index=1 realmente no se ocupa según el cuadro de posicionamiento de App Brewery*/
+}
+
+.features-block {
+  text-align: center;
+  padding: 5%;
+}
+
+.features-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ef8172;
+}
+
+.features-icon:hover {
+  color: #ff4c68;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.features-comment {
+  color: #8f8f8f;
+}
+
+/* testimonial section*/
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+  /* top sides bottom */
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+#cta {
+  background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 10% 5%;
+}
+
+.cta-title {
+  color: #fff;
+  font-size: 3rem;
+  /* margin-bottom: 5%; */
+}
+
+footer {
+  text-align: center;
+  padding: 7% 10%;
+}
+
+footer p {
+  padding-top: 2%;
+  color: grey;
+  font-weight: 500;
+}
+
+.footer-icon {
+  margin: 0 10px;
+}
+@media (max-width: 1028px) {
+
+  /*esto cambia los estilos de css bajo ciertas condiciones, en este caso tamaño de pantalla*/
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    width: 60%;
+    position: static;
+    /*esto regresa la imagen al flujo*/
+    transform: rotate(0deg);
+    right: 0;
+  }
+}
